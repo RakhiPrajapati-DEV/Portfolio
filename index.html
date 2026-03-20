@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rakhi Prajapati — Web Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Jost:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet"/>
+
+  <!-- Portfolio Styles -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ══ BACKGROUND BLOBS ══════════════════════ -->
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+  <div class="blob blob3"></div>
+
+  <!-- ══ CUSTOM CURSOR ════════════════════════ -->
+  <div id="cur"></div>
+  <div id="cur2"></div>
+
+  <!-- ══ LOADER ═══════════════════════════════ -->
+  <div id="loader">
+    <div class="ld-mono" id="ldMono">R<em>P</em></div>
+    <div class="ld-bar"><div class="ld-fill" id="ldFill"></div></div>
+    <div class="ld-sub" id="ldSub">Web Developer</div>
+  </div>
+
+  <!-- ══ NAV ══════════════════════════════════ -->
+  <nav id="nav">
+    <div class="n-logo">Rakhi <em>Prajapati</em></div>
+    <div class="n-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Work</a>
+      <a href="#contact" class="n-hire">Hire Me</a>
+    </div>
+    <button class="n-burger" id="nBurger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mob-menu" id="mobMenu">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Work</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- ══ HERO ══════════════════════════════════ -->
+  <section class="hero" id="home">
+
+    <!-- LEFT: Text -->
+    <div class="hero-left-col">
+      <div class="hero-tag">
+        <div class="tag-ping"></div>
+        Open to opportunities · Ghaziabad, India
+      </div>
+      <h1 class="hero-name">
+        <span class="hn1"><span id="hn1t">Rakhi</span></span>
+        <span class="hn2"><span id="hn2t">Prajapati</span></span>
+      </h1>
+      <div class="hero-bottom">
+        <div class="hero-role">
+          <div class="role-line"></div>
+          Web Developer & UI/UX Enthusiast
+        </div>
+        <p class="hero-para" id="heroPara">
+          I build <strong>fast, animated & accessible</strong> web experiences — skilled in HTML, CSS, JavaScript, React, PHP, and GSAP. Every pixel placed with care, every interaction crafted with intention.
+        </p>
+        <div class="hero-ctas" id="heroCtas">
+          <a href="#projects" class="btn-rose">View My Work ↗</a>
+          <a href="mailto:contactrakhiprajapati@gmail.com" class="btn-soft">Say Hello →</a>
+        </div>
+        <div class="hero-stats-row" id="heroStats">
+          <div>
+            <div class="hs-n">7<sup>+</sup></div>
+            <div class="hs-l">month Exp.</div>
+          </div>
+          <div>
+            <div class="hs-n">5<sup>+</sup></div>
+            <div class="hs-l">Projects</div>
+          </div>
+          <div>
+            <div class="hs-n">80<sup>%</sup></div>
+            <div class="hs-l">BCA Score</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Photo Frame -->
+    <div class="hero-img-col" id="heroImgCol">
+      <div class="hero-img-blob"></div>
+      <div class="hero-img-frame">
+        <!--
+          ══════════════════════════════════════
+          📸 APNI PHOTO LAGANE KE LIYE:
+          Neeche ki line se comment hatao aur
+          "your-photo.jpg" ki jagah apni
+          image ka naam likhdo.
+          Image file isi folder mein rakhna.
+          ══════════════════════════════════════
+        -->
+        <img src="my-pic.jpeg" alt="Rakhi Prajapati" />
+
+        <!-- Placeholder (photo lagane ke baad ye hata sakte ho) -->
+        <div class="hero-img-placeholder">
+          <!-- <div class="hip-icon">🌸</div> -->
+          <div class="hip-txt">Apni photo<br/>yahan lagao</div>
+        </div>
+      </div>
+      <div class="hero-img-dots"></div>
+      <div class="hero-img-badge">
+        <div class="badge-dot"></div>
+        Available for Work
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="hsl"></div>
+      <div class="hst">scroll</div>
+    </div>
+  </section>
+
+  <!-- ══ MARQUEE ════════════════════════════════ -->
+  <div class="mq">
+    <div class="mq-t">
+      <div class="mq-i">HTML5 <b>✦</b></div>
+      <div class="mq-i">CSS3 <b>✦</b></div>
+      <div class="mq-i">JavaScript <b>✦</b></div>
+      <div class="mq-i">jQuery <b>✦</b></div>
+      <div class="mq-i">Bootstrap <b>✦</b></div>
+      <div class="mq-i">Tailwind CSS <b>✦</b></div>
+      <div class="mq-i">GSAP <b>✦</b></div>
+      <div class="mq-i">React <b>✦</b></div>
+      <div class="mq-i">PHP <b>✦</b></div>
+      <div class="mq-i">SQL <b>✦</b></div>
+      <div class="mq-i">SEO <b>✦</b></div>
+      <div class="mq-i">Canva <b>✦</b></div>
+      <div class="mq-i">HTML5 <b>✦</b></div>
+      <div class="mq-i">CSS3 <b>✦</b></div>
+      <div class="mq-i">JavaScript <b>✦</b></div>
+      <div class="mq-i">jQuery <b>✦</b></div>
+      <div class="mq-i">Bootstrap <b>✦</b></div>
+      <div class="mq-i">Tailwind CSS <b>✦</b></div>
+      <div class="mq-i">GSAP <b>✦</b></div>
+      <!-- <div class="mq-i">React <b>✦</b></div> -->
+      <div class="mq-i">PHP <b>✦</b></div>
+      <div class="mq-i">SQL <b>✦</b></div>
+      <div class="mq-i">SEO <b>✦</b></div>
+      <div class="mq-i">Canva <b>✦</b></div>
+    </div>
+  </div>
+
+  <!-- ══ ABOUT ══════════════════════════════════ -->
+  <section id="about">
+    <div class="sec">
+      <div class="about-g">
+        <div class="rv">
+          <div class="av-card">
+            <div class="av-bg"></div>
+            <div class="av-dots"></div>
+            <div class="av-center">
+              <div class="av-ring"></div>
+              <div class="av-initials">RP</div>
+            </div>
+            <div class="av-tag av-tag1">
+              <div class="atd atd-sage"></div>
+              Open to Work
+            </div>
+            <div class="av-tag av-tag2">
+              <div class="atd atd-rose"></div>
+              Ghaziabad, India
+            </div>
+          </div>
+        </div>
+        <div class="about-txt">
+          <div class="sec-label rv">About Me</div>
+          <h2 class="sec-h rv">Building the web,<br/><em>one line at a time.</em></h2>
+          <p class="rv">
+            Hey! I'm <strong>Rakhi Prajapati</strong> — a Web Developer from Ghaziabad with a BCA from HRIT Group of Institutions. I love turning ideas into smooth, functional, and beautiful websites.
+          </p>
+          <p class="rv">
+            I'm skilled in both <strong>frontend and backend development</strong> — from GSAP animations and Tailwind UI to PHP backends and SQL databases. Also experienced in <strong>SEO and digital marketing</strong>.
+          </p>
+          <div class="about-facts rv">
+            <div class="af">
+              <div class="af-label">Location</div>
+              <div class="af-val">Sanjay Nagar, Ghaziabad</div>
+            </div>
+            <div class="af">
+              <div class="af-label">Education</div>
+              <div class="af-val">BCA — HRIT, CCSU (80%)</div>
+            </div>
+            <div class="af">
+              <div class="af-label">Email</div>
+              <div class="af-val" style="font-size:13px"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c8aba7a6bca9abbcbaa9a3a0a1b8baa9a2a9b8a9bca188afa5a9a1a4e6aba7a5">[email&#160;protected]</a></div>
+            </div>
+            <div class="af">
+              <div class="af-label">Status</div>
+              <div class="af-val" style="color:var(--sage)">● Open to Work</div>
+            </div>
+          </div>
+          <a href="/cdn-cgi/l/email-protection#0b6864657f6a687f796a6063627b796a616a7b6a7f624b6c666a626725686466" class="btn-rose rv" style="display:inline-flex">Let's Connect →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ EXPERIENCE ═════════════════════════════ -->
+  <section id="experience">
+    <div class="sec">
+      <div class="sec-label rv">Work History</div>
+      <h2 class="sec-h rv">My <em>Experience.</em></h2>
+      <div class="exp-timeline">
+
+        <div class="exp-item rv">
+          <div class="exp-date">
+            Dec 2024 – Jun 2025
+            <span>Noida, India</span>
+          </div>
+          <div class="exp-right">
+            <div class="exp-role">Software Developer Trainee & Digital Marketer</div>
+            <div class="exp-company">Apex IT Solutions, Sector-63, Noida</div>
+            <p class="exp-desc">Gained hands-on experience in web development, database handling, and digital marketing. Worked on frontend and backend using HTML, CSS, Bootstrap, JavaScript, jQuery, Tailwind, and PHP. Skilled in SEO, content, and social media management, while improving UI/UX, performance, and authentication in real projects.</p>
+            <div class="exp-tags">
+              <span>HTML/CSS</span>
+              <span>JavaScript</span>
+              <span>PHP</span>
+              <span>jQuery</span>
+              <span>Tailwind</span>
+              <span>SEO</span>
+              <span>UI/UX</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item rv">
+          <div class="exp-date">
+            Oct 2024 – Apr 2025
+            <span>Noida, India</span>
+          </div>
+          <div class="exp-right">
+            <div class="exp-role">Web Developer & Graphic Designer</div>
+            <div class="exp-company">Aahana Networking Pvt Ltd, Sector-4, Noida</div>
+            <p class="exp-desc">Built and managed websites using HTML, CSS, Bootstrap, JavaScript, jQuery, Tailwind, and PHP. Created high-quality designs and edited videos on Canva. Also handled SEO, content, and social media to grow online reach. Improved UI/UX and overall site performance while working on real projects.</p>
+            <div class="exp-tags">
+              <span>HTML/CSS</span>
+              <span>Bootstrap</span>
+              <span>JavaScript</span>
+              <span>PHP</span>
+              <span>Canva</span>
+              <span>Social Media</span>
+              <span>SEO</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SKILLS ═════════════════════════════════ -->
+  <section id="skills">
+    <div class="sec">
+      <div class="sk-g">
+        <div>
+          <div class="sec-label rv">Expertise</div>
+          <h2 class="sec-h rv">My Tech<br/><em>Stack.</em></h2>
+          <p class="rv">From pixel-perfect frontends to PHP backends — here's what I bring to every project.</p>
+          <div class="sk-tags rv">
+            <span class="sk-tag">HTML5</span>
+            <span class="sk-tag">CSS3</span>
+            <span class="sk-tag">JavaScript</span>
+            <span class="sk-tag">jQuery</span>
+            <span class="sk-tag">Bootstrap</span>
+            <span class="sk-tag">Tailwind</span>
+            <span class="sk-tag">GSAP</span>
+            <!-- <span class="sk-tag">React</span> -->
+            <span class="sk-tag">PHP</span>
+            <span class="sk-tag">SQL</span>
+            <span class="sk-tag">Git</span>
+            <span class="sk-tag">SEO</span>
+            <span class="sk-tag">Canva</span>
+            <span class="sk-tag">Google Ads</span>
+          </div>
+        </div>
+        <div class="rv">
+          <div class="skill-item" data-lvl="95">
+            <div class="skill-top">
+              <div class="skill-name"><span class="skill-icon">🌐</span> HTML5 / CSS3</div>
+              <div class="skill-pct">95%</div>
+            </div>
+            <div class="skill-bar"><div class="skill-fill"></div></div>
+          </div>
+          <div class="skill-item" data-lvl="88">
+            <div class="skill-top">
+              <div class="skill-name"><span class="skill-icon">⚡</span> JavaScript / jQuery</div>
+              <div class="skill-pct">88%</div>
+            </div>
+            <div class="skill-bar"><div class="skill-fill sage"></div></div>
+          </div>
+          <div class="skill-item" data-lvl="90">
+            <div class="skill-top">
+              <div class="skill-name"><span class="skill-icon">💨</span> Bootstrap / Tailwind</div>
+              <div class="skill-pct">90%</div>
+            </div>
+            <div class="skill-bar"><div class="skill-fill lav"></div></div>
+          </div>
+          <div class="skill-item" data-lvl="80">
+            <div class="skill-top">
+              <div class="skill-name"><span class="skill-icon">🎬</span> GSAP / ScrollTrigger</div>
+              <div class="skill-pct">80%</div>
+            </div>
+            <div class="skill-bar"><div class="skill-fill"></div></div>
+          </div>
+          <!-- <div class="skill-item" data-lvl="72">
+            <div class="skill-top">
+              <div class="skill-name"><span class="skill-icon">⚛️</span> React</div>
+              <div class="skill-pct">72%</div>
+            </div>
+            <div class="skill-bar"><div class="skill-fill sage"></div></div>
+          </div> -->
+          <div class="skill-item" data-lvl="78">
+            <div class="skill-top">
+              <div class="skill-name"><span class="skill-icon">🐘</span> PHP / SQL</div>
+              <div class="skill-pct">78%</div>
+            </div>
+            <div class="skill-bar"><div class="skill-fill lav"></div></div>
+          </div>
+          <div class="skill-item" data-lvl="85">
+            <div class="skill-top">
+              <div class="skill-name"><span class="skill-icon">📈</span> SEO / Digital Marketing</div>
+              <div class="skill-pct">85%</div>
+            </div>
+            <div class="skill-bar"><div class="skill-fill"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PROJECTS ═══════════════════════════════ -->
+  <section id="projects">
+    <div class="sec">
+      <div class="proj-hdr rv">
+        <div>
+          <div class="sec-label">Projects</div>
+          <h2 class="sec-h">Things I've <em>built.</em></h2>
+        </div>
+        <a href="https://github.com/RakhiPrajapati-DEV" target="_blank" class="btn-soft">GitHub ↗</a>
+      </div>
+      <div class="proj-grid">
+
+        <!-- Project 1 -->
+        <div class="pc pc-a rv">
+          <div class="pc-thumb">
+            <div class="pt-bg pt1">
+              <div class="pt-orb" style="width:200px;height:200px;background:var(--rose2);top:-60px;right:-40px"></div>
+              <div class="pt-orb" style="width:120px;height:120px;background:var(--sage2);bottom:-20px;left:20px"></div>
+              <div style="position:relative;z-index:1">
+                <div class="pt-card-mock">
+                  <div class="mock-line rose" style="width:80%"></div>
+                  <div class="mock-line" style="width:60%"></div>
+                  <div class="mock-line" style="width:90%"></div>
+                  <div class="mock-dots">
+                    <span></span>
+                    <span style="background:var(--sage2)"></span>
+                    <span style="background:var(--rose3)"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pt-label">HTML · CSS · JS · PHP · SQL</div>
+          </div>
+          <div class="pc-body">
+            <div class="pc-meta">
+              <div class="pc-n">Live Project</div>
+              <div class="pc-ls">
+                <a href="https://apexitsolutions.in" target="_blank" class="pcl" aria-label="Live Site">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    <polyline points="15 3 21 3 21 9"/>
+                    <line x1="10" y1="14" x2="21" y2="3"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="pc-title">Apex IT Solutions Website</div>
+            <div class="pc-desc">A dynamic, responsive website built during my internship. Features interactive JavaScript, PHP backend for server-side logic, and SQL database for efficient data management.</div>
+            <div class="pc-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>SQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="pc pc-b rv">
+          <div class="pc-thumb">
+            <div class="pt-bg pt2">
+              <div class="pt-orb" style="width:160px;height:160px;background:var(--sage2);top:-40px;left:-30px;opacity:.7"></div>
+              <div style="position:relative;z-index:1">
+                <div class="pt-card-mock">
+                  <div class="mock-line sage" style="width:70%"></div>
+                  <div class="mock-line" style="width:50%"></div>
+                  <div class="mock-line sage" style="width:85%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="pt-label">HTML · CSS · JS</div>
+          </div>
+          <div class="pc-body">
+            <div class="pc-meta">
+              <div class="pc-n">Capstone Project</div>
+              <div class="pc-ls">
+                <a href="https://github.com/RakhiPrajapati-DEV" target="_blank" class="pcl" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="pc-title">Golf Course & Adventure Hub</div>
+            <div class="pc-desc">User-friendly website with booking for golf lessons, adventure activities & a coffee shop. Enhanced with animations and interactive elements.</div>
+            <div class="pc-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>GSAP</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Wide -->
+        <div class="pc pc-c rv">
+          <div style="display:grid;grid-template-columns:1.2fr 1fr;height:100%">
+            <div class="pc-thumb" style="height:100%;min-height:200px">
+              <div class="pt-bg pt3" style="height:100%">
+                <div class="pt-orb" style="width:180px;height:180px;background:rgba(196,168,130,.4);top:-30px;right:20px"></div>
+                <div style="position:relative;z-index:1">
+                  <div class="pt-card-mock">
+                    <div class="mock-line" style="width:90%;background:linear-gradient(90deg,var(--sand),rgba(196,168,130,.3))"></div>
+                    <div class="mock-line" style="width:65%"></div>
+                    <div class="mock-line" style="width:80%;background:linear-gradient(90deg,var(--rose2),var(--rose3))"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-label">Portfolio</div>
+            </div>
+            <div class="pc-body" style="display:flex;flex-direction:column;justify-content:center">
+              <div class="pc-meta">
+                <div class="pc-n">Personal</div>
+                <div class="pc-ls">
+                  <a href="https://github.com/RakhiPrajapati-DEV" target="_blank" class="pcl" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="pc-title">This Portfolio</div>
+              <div class="pc-desc">Built with pure HTML, CSS & GSAP — clean, animated, and fully responsive. Three separate files for easy editing.</div>
+              <div class="pc-tags"><span>HTML</span><span>CSS</span><span>GSAP</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ EDUCATION ══════════════════════════════ -->
+  <section id="education">
+    <div class="sec">
+      <div class="sec-label rv">Academic Background</div>
+      <h2 class="sec-h rv">Education & <em>Certifications.</em></h2>
+      <div class="edu-grid">
+        <div class="edu-card rv">
+          <div class="edu-year">2022 — 2025</div>
+          <div class="edu-deg">Bachelor of Computer Applications (BCA)</div>
+          <div class="edu-inst">HRIT Group of Institutions, CCSU · Duhai</div>
+          <div class="edu-pct">🎓 80%</div>
+        </div>
+        <div class="edu-card rv">
+          <div class="edu-year">2021 — 2022</div>
+          <div class="edu-deg">Class 12th — CBSE</div>
+          <div class="edu-inst">Green Field Public School · Ghaziabad</div>
+          <div class="edu-pct">📚 85%</div>
+        </div>
+        <div class="edu-card rv">
+          <div class="edu-year">2019 — 2020</div>
+          <div class="edu-deg">Class 10th — CBSE</div>
+          <div class="edu-inst">Green Field Public School · Ghaziabad</div>
+          <div class="edu-pct">📖 73%</div>
+        </div>
+      </div>
+      <div class="cert-list rv" style="margin-top:40px">
+        <div style="font-family:var(--mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--rose);margin-bottom:8px">
+          Certifications
+        </div>
+        <div class="cert-item">
+          <span class="cert-icon">✦</span>
+          Web Development using Python and Tkinter
+        </div>
+        <div class="cert-item">
+          <span class="cert-icon">✦</span>
+          Full Stack Web Development — Lifelong Learning Pathways
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ════════════════════════════════ -->
+  <section id="contact">
+    <div class="sec">
+      <div class="contact-g">
+        <div class="rv">
+          <div class="sec-label">Get In Touch</div>
+          <h2 class="sec-h">Let's build<br/>something <em>beautiful.</em></h2>
+          <p>Have a project idea, want to collaborate, or just say hi? I'd love to hear from you — let's create something amazing together.</p>
+          <div class="c-links">
+            <a href="mailto:contactrakhiprajapati@gmail.com" class="c-link">
+              <div class="cl-icon">✉</div>
+              contactrakhiprajapati@gmail.com
+            </a>
+            <a href="tel:9310793656" class="c-link">
+              <div class="cl-icon">📞</div>
+              +91 9310793656
+            </a>
+            <a href="https://www.linkedin.com/in/rakhi-prajapati-439ab8287" target="_blank" class="c-link">
+              <div class="cl-icon" style="font-size:13px;font-weight:700;font-family:'Jost',sans-serif">in</div>
+              linkedin.com/in/rakhi-prajapati
+            </a>
+            <a href="https://github.com/RakhiPrajapati-DEV" target="_blank" class="c-link">
+              <div class="cl-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="15">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </div>
+              github.com/RakhiPrajapati-DEV
+            </a>
+          </div>
+        </div>
+        <div class="c-form rv">
+          <div class="cf-title">Send a message ✦</div>
+          <form id="cForm">
+            <div class="fg">
+              <label>Your Name</label>
+              <input type="text" name="name" id="cfName" placeholder="Your name" required/>
+            </div>
+            <div class="fg">
+              <label>Email Address</label>
+              <input type="email" name="email" id="cfEmail" placeholder="your@email.com" required/>
+            </div>
+            <div class="fg">
+              <label>Message</label>
+              <textarea name="message" id="cfMessage" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="cf-btn" id="cfBtn">Send Message →</button>
+            <div class="cf-ok" id="cfOk"><span>✦</span> Message sent! I'll reply within 24 hours.</div>
+            <div class="cf-err" id="cfErr"><span>✗</span> Kuch error aayi, dobara try karo.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ═════════════════════════════════ -->
+  <footer>
+    <div class="ft-logo">Rakhi <em>P.</em></div>
+    <div class="ft-c">© 2025 — Rakhi Prajapati · Ghaziabad</div>
+    <div class="ft-ls">
+      <a href="#home">↑ Top</a>
+      <a href="https://github.com/RakhiPrajapati-DEV" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/rakhi-prajapati-439ab8287" target="_blank">LinkedIn</a>
+    </div>
+    </footer>
+
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+
+  <!-- Portfolio Script -->
+  <script src="main.js"></script>
+
+</body>
+</html>
